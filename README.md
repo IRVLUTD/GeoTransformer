@@ -44,7 +44,8 @@ Check available versions at: https://pytorch.org/get-started/locally/
 
 # Install packages and other dependencies
 pip install -r requirements.txt
-python setup.py build develop
+
+pip install -e . --no-build-isolation
 ```
 
 Code has been tested with Ubuntu 20.04, GCC 9.3.0, Python 3.8, PyTorch 1.7.1, CUDA 11.1 and cuDNN 8.1.0.

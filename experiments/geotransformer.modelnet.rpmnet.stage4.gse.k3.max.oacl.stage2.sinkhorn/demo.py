@@ -54,7 +54,7 @@ def main():
 
     # prepare data
     data_dict = load_data(args)
-    neighbor_limits = [38, 36, 36, 38]  # default setting in 3DMatch
+    neighbor_limits = [38, 36, 36]  # default setting in 3DMatch
     data_dict = registration_collate_fn_stack_mode(
         [data_dict], cfg.backbone.num_stages, cfg.backbone.init_voxel_size, cfg.backbone.init_radius, neighbor_limits
     )
